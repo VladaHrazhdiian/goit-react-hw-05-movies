@@ -30,4 +30,5 @@ export const Img = styled.img`
   width: 250px;
   height: 350px;
   border-radius: 10px;
+  padding-top: 10px;
 `;
