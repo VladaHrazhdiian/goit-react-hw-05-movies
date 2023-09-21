@@ -1,20 +1,19 @@
 import styled from '@emotion/styled';
 
 export const Form = styled.form`
+   max-width: 400px;
+  margin: 0 auto;
+  padding: 4px 0;
   display: flex;
   align-items: center;
-  max-width: 300px;
-  background-color: #fff;
-  border-radius: 3px;
-  overflow: hidden;
-  margin: 0 auto;
-  margin-bottom: 18px;
+  justify-content: center;
 `;
+
 
 export const FormButton = styled.button`
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   border: 0;
   background-size: 40%;
   background-repeat: no-repeat;
@@ -30,17 +29,11 @@ export const FormButton = styled.button`
 `;
 
 export const FormInput = styled.input`
-  display: inline-block;
-  width: 100%;
-  font: inherit;
-  font-size: 20px;
-  border: none;
+   width: 100%;
+  height: 22px;
+  padding: 4px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #c2c2c2;
+  border-right: none;
   outline: none;
-  padding-left: 20px;
-  padding-right: 4px;
-
-  ::placeholder {
-    font: inherit;
-    font-size: 18px;
-  }
 `;

@@ -10,7 +10,7 @@ export const List = styled.ul`
 
 export const Card = styled.li`
   border-radius: 10px;
-  width: 300px;
+  width: 250px;
   text-align: center;
   :hover {
     transform: scale(1.03)
@@ -18,15 +18,16 @@ export const Card = styled.li`
 `;
 
 export const Title = styled.p`
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   margin: 0;
   margin-top: 10px;
+  
 `;
 
 export const Img = styled.img`
   border-radius: inherit;
-  width: 300px;
-  height: 450px;
+  width: 250px;
+  height: 350px;
   border-radius: 10px;
 `;
