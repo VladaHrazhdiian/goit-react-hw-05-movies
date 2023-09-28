@@ -3,16 +3,15 @@ import { useState } from 'react';
 import { FcSearch } from 'react-icons/fc';
 import PropTypes from 'prop-types';
 
-
 const SearchForm = ({ setParams }) => {
   const [query, setQuery] = useState('');
 
   const handleChange = e => {
     setQuery(e.target.value.trim().toLowerCase());
   };
+
   const handleSubmit = e => {
     e.preventDefault();
-
     setParams(query);
   };
 
@@ -22,6 +21,7 @@ const SearchForm = ({ setParams }) => {
         type="text"
         name="search"
         onChange={handleChange}
+        value={query} 
       />
       <FormButton type="submit">
         <FcSearch size="30" />
@@ -33,5 +33,5 @@ const SearchForm = ({ setParams }) => {
 export default SearchForm;
 
 SearchForm.propTypes = {
-	setParams: PropTypes.func.isRequired,
-}
+  setParams: PropTypes.func.isRequired,
+};
